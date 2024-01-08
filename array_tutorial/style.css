@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap");
+
+html {
+  box-sizing: border-box; /* allow width and height to include everything up until the border */
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font: normal 1.1em "Varela Round", sans-serif;
+  margin: 0 auto;
+  background-color: #caf3dc;
+}
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  color: #00453a;
+  font-weight: 900;
+  font-size: 2.6em;
+}
+
+h2 {
+  color: #0a461c;
+  font-size: 1.7em;
+}
+
+h3 {
+  color: #007965;
+  font-size: 1.4em;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+}
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto; /* center a block element horizontally */
+}
+
+#main {
+  width: 80%;
+  float: right;
+  display: inline-block;
+  background-color: #f8f1f1;
+  color: #462b2b;
+  padding: 2%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 35%;
+  left: 12%;
+  width: 14%;
+  transform: translateX(-5%);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #381300;
+}
+
+.sidebar a:hover {
+  color: #e84000;
+}
+
+#footer {
+  clear: both;
+}
+
+#header {
+  background-color: #00af91;
+  padding: 2%;
+}
+
+#header h2 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 1%;
+}
+
+#header li {
+  display: inline-block;
+  padding-right: 10%;
+}
+#header a {
+  color: azure;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+#header a:hover {
+  color: #f1804b;
+}
+
+.menu {
+  padding-top: 1%;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.code {
+  background-color: #d3e0e8;
+  border-radius: 10px;
+  padding: 10px;
+  color: #155454;
+}
+
+.printOrigArr {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+  color: #126720;
+}
+
+.printResult {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  word-break: break-all;
+  color: #126720;
+  display: none;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.2em;
+  border-style: none;
+  width: 30%;
+  margin-right: 10px;
+}
+
+input#customArrayVal {
+  width: 60%;
+}
+
+.button {
+  background-color: #4caf50;
+  padding: 1%;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #275a29;
+}
+
+.main-content h2 {
+  padding-top: 30px;
+}
+
+#footer {
+  background-color: darkslategrey;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+}
+
+.new-line {
+  display: block;
+  padding-bottom: 10px;
+}
+
+#references h3 {
+  text-align: center;
+}
+#references a {
+  text-decoration: none;
+  color: darkgreen;
+}
+#references p {
+  text-align: center;
+}
+#references a:hover {
+  color: forestgreen;
+}
+
+/*slider css*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  margin-left: 10px;
+  padding: 1.2%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 36px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4caf50;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 40%;
+}
+/*side scroll bar attaches to the bottom of the page*/
+@media screen and (max-width: 1290px) {
+  .sidebar {
+    width: 90%;
+    position: relative;
+    display: block;
+    float: left;
+  }
+  body {
+    margin: 0;
+  }
+  #main {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2%;
+  }
+}
+
+/*header nav bar becomes stacked*/
+@media screen and (max-width: 776px) {
+  #header li {
+    display: block;
+  }
+}

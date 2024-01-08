@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Array Tutorial</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="page-container">
+        <h2 id="site-name">Javascript Tutorial Page</h2>
+      </div>
+      <nav id="main-menu">
+        <div class="page-container">
+          <h3 class="hidden">Main navigation</h3>
+          <ul class="menu">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <!-- <li><a href="#">Functions</a></li> -->
+            <li><a href="#references">References</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="page-container">
+      <main id="main">
+        <!--Banner-->
+        <div class="welcome-banner">
+          <!--Banner Title-->
+          <div class="banner-content">
+            <h1 class="banner-title">Javascript Array Tutorial</h1>
+          </div>
+        </div>
+        <!--Introduction section-->
+        <section id="array_intro">
+          <section>
+            <div class="main-content">
+              <h2>What is a Javascript Array?</h2>
+              <p>
+                The Array object in Javascript can store multiple values in a
+                single variable. An array can store many values under a single
+                name, and all the elements can be accessed using index numbers.
+              </p>
+              <p>
+                Unlike other languages, the Javascript array can hold variables
+                of differernt data type as well.
+              </p>
+            </div>
+          </section>
+          <section id="create_array">
+            <div class="main-content">
+              <h3>Creating an Array</h3>
+              <p>To create an array you can use the following format</p>
+              <div class="code">
+                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                <p>var arrayName = [];</p>
+                <p>
+                  var sampleArray = ["batman", "superman", "spiderman",
+                  "wonderwoman", "ironman", 34, 56, "hawkeye", 1.21];
+                </p>
+                <p>// input your custom array in the field below</p>
+                <p>
+                  click on execute and slide the toggle to switch between your
+                </p>
+                <p>// custom array and prebuilt sampleArray</p>
+                <input
+                  type="text"
+                  id="customArrayVal"
+                  placeholder="var myArray = ['1', 2, 'foo', 3.14,......,'&lt;anything&gt;']"
+                  value="var myArray = [1];"
+               >
+                <button onclick="inputCustomArray()" class="button">
+                  Execute
+                </button>
+                <label class="switch">
+                  <input
+                    type="checkbox"
+                    id="chkbxID"
+                    onclick="toggleDefaultArray()"
+                 >
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </section>
+          <section id="access_array">
+            <div class="main-content">
+              <h3>Accessing an Array elements</h3>
+              <p>
+                To access any array element you can use the following format
+              </p>
+              <p>arrayName[index of the element]</p>
+              <div class="code">
+                <p>var zerothElement = arrayName[0];</p>
+              </div>
+              <p>Array index starts from 0</p>
+              <p>
+                Consider the sample array, input different index number to
+                access different values inside the array
+              </p>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <input type="text" id="arrIndex0" placeholder="Enter index">
+              <button onclick="printArrEle()" class="button">Try it</button>
+              <p id="accArr" class="printResult"></p>
+            </div>
+          </section>
+          <section id="change_array_ele">
+            <div class="main-content">
+              <h3>Changing an Array element</h3>
+              <p>
+                To change any array element you can use the following format
+              </p>
+              <div class="code">
+                <p>arrayName[index of the element] = new value;</p>
+              </div>
+              <p>
+                Consider the sample array, change the value of elements by
+                mentioning the key and value
+              </p>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <input type="text" id="arrIndex1" placeholder="Enter index">
+              <input type="text" id="arrValue1" placeholder="Enter value">
+              <button onclick="changeArrEle()" class="button">Try it</button>
+              <button onclick="resetArrEle('chngArr')" class="button">
+                Reset
+              </button>
+              <p id="chngArr" class="printResult"></p>
+            </div>
+          </section>
+        </section>
+        <section id="array_methods">
+          <section id="introduction">
+            <div class="main-content">
+              <h2>What are some Javascript Array methods?</h2>
+              <p>
+                The javascript offers a few inbuilt methods which we can use on
+                the array.
+              </p>
+              <p>Let's have a look at them.</p>
+            </div>
+          </section>
+          <section id="popping_array">
+            <div class="main-content">
+              <h3>Popping</h3>
+              <p>
+                Popping means, we are <em>removing</em> elements from an array
+              </p>
+              <p>
+                We use pop() method to remove the last element from an array.
+              </p>
+              <div class="code">
+                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                <p>arrayName.pop();</p>
+              </div>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <button onclick="popArrEle()" class="button">Pop</button>
+              <button onclick="resetArrEle('popArr')" class="button">
+                Reset
+              </button>
+              <p id="popArr" class="printResult"></p>
+            </div>
+          </section>
+          <section id="shifting_aray">
+            <div class="main-content">
+              <h3>Shifting</h3>
+              <p>
+                Shifting means, we are <em>removing</em> elements from an array
+              </p>
+              <p>
+                We use shift() method to remove the first element from an array
+                and all other elements shifts one position down in the index
+                list (decrements the index value).
+              </p>
+              <div class="code">
+                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                <p>arrayName.shift();</p>
+              </div>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <button onclick="shiftArrEle()" class="button">Shift</button>
+              <button onclick="resetArrEle('shiftOut')" class="button">
+                Reset
+              </button>
+              <p id="shiftOut" class="printResult"></p>
+            </div>
+          </section>
+          <section id="pushing_array">
+            <div class="main-content">
+              <h3>Pushing</h3>
+              <p>Pushing means, we are <em>adding</em> elements to an array</p>
+              <p>
+                We use push() method to add an element to the end of an array.
+              </p>
+              <div class="code">
+                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                <p>arrayName.push("ele4");</p>
+              </div>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <input type="text" id="pushVal" placeholder="Enter value">
+              <button onclick="pushArrEle()" class="button">Push</button>
+              <button onclick="resetArrEle('pushArr')" class="button">
+                Reset
+              </button>
+              <p id="pushArr" class="printResult"></p>
+            </div>
+          </section>
+          <section id="unshifting_aray">
+            <div class="main-content">
+              <h3>Unshifting</h3>
+              <p>
+                Unshifting means, we are <em>adding</em> elements to an array
+              </p>
+              <p>
+                We use unshift() method to add an element to the start of an
+                array.
+              </p>
+              <div class="code">
+                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                <p>arrayName.unshift("ele0");</p>
+              </div>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <input type="text" id="unshiftVal" placeholder="Enter value">
+              <button onclick="unshiftArrEle()" class="button">Unshift</button>
+              <button onclick="resetArrEle('unshiftArr')" class="button">
+                Reset
+              </button>
+              <p id="unshiftArr" class="printResult"></p>
+            </div>
+          </section>
+          <section id="deleting_array">
+            <div class="main-content">
+              <h3>Deleting</h3>
+              <p>
+                Deleting means, we are <em>deleting</em> an elements from an
+                array.
+              </p>
+              <p>
+                We use delete method to delete an element and the deleted
+                element will be reassigned as undefined or empty.
+              </p>
+              <div class="code">
+                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                <p>delete arrayName[0];</p>
+              </div>
+              <p>
+                Please use the inspect tool to see the changes to the array:
+                <em>Ctrl + Shift + I</em>
+              </p>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <input type="text" id="deleteVal" placeholder="Enter index">
+              <button onclick="deleteArrEle()" class="button">Delete</button>
+              <button onclick="resetArrEle('deleteArr')" class="button">
+                Reset
+              </button>
+              <p id="deleteArr" class="printResult"></p>
+              <p id="deleteArrEleBefore" class="printResult"></p>
+              <p id="deleteArrEleAfter" class="printResult"></p>
+            </div>
+          </section>
+          <section id="sandbox">
+            <div class="main-content">
+              <h3>Javascript Sandbox</h3>
+              <p>
+                Please use the following text field to run, any Javascript code.
+                The current status of the array will be shown after every
+                execution.
+              </p>
+              <div class="code">
+                <p>// our array name is globalArray</p>
+                <p>// run any code you want, find the example below</p>
+                <p>globalArray.push("Krypto");</p>
+              </div>
+              <p class="printOrigArr">
+                Existing array elements are:<span class="new-line"></span
+                >["batman", "superman", "spiderman", "wonderwoman", "ironman",
+                "34", "56", "hawkeye", "1.21"]
+              </p>
+              <input
+                type="text"
+                id="sandVal"
+                placeholder="Enter javascript command"
+             >
+              <button onclick="sandBox()" class="button">Execute</button>
+              <button onclick="resetArrEle('sandBoxArr')" class="button">
+                Reset
+              </button>
+              <p id="sandBoxReturn" class="printResult"></p>
+              <p id="sandBoxArr" class="printResult"></p>
+            </div>
+          </section>
+        </section>
+        <section id="references">
+          <div class="main-content">
+            <h3>References</h3>
+            <p>
+              1.
+              <a href="https://www.w3schools.com/js/js_arrays.asp"
+                >w3school Javascript Arrays</a
+              >
+            </p>
+          </div>
+        </section>
+      </main>
+      <aside id="sidebar-one" class="sidebar">
+        <h2 id="test-title">JS Arrays</h2>
+        <ul>
+          <li><a href="#create_array">Creating Array</a></li>
+          <li><a href="#access_array">Accessing Array elements</a></li>
+          <li><a href="#change_array_ele">Changing Array elements</a></li>
+          <li><a href="#popping_array">Popping</a></li>
+          <li><a href="#shifting_aray">Shifting</a></li>
+          <li><a href="#pushing_array">Pushing</a></li>
+          <li><a href="#unshifting_aray">Unshifting</a></li>
+          <li><a href="#deleting_array">Deleting</a></li>
+          <li><a href="#sandbox">Sandbox</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </aside>
+    </div>
+    <footer id="footer">
+      <div class="copyright">© Copyright Divish Ram, 2021 (HTTP 5111)</div>
+    </footer>
+  </body>
+</html>
