@@ -1,3 +1,4 @@
+"use strict";
 //creating a class for the memory game
 //this is used to mention that this belongs to the class so it can be used anywhere on the class
 //here this refers to the memorygame class
