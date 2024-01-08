@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- Link here your CSS file. -->
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/contact-us.css">
+    <script type="text/javascript" src="./js/general.js"></script>
+    <script src="./js/contact-us.js"></script>
+
+
+    <title>Holy Epic Steakhouse</title>
+</head>
+
+<body>
+    <!-- This is header of the page. -->
+    <header class="page-container">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/general-logUsed.png" alt="Logo of Holy Epic steakhouse">
+            </a>
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./events.html">Events/Bookings</a></li>
+                <li><a href="./giftcards.html">Gift Cards</a></li>
+                <li><a href="./career.html">Careers</a></li>
+                <li class="dropdown"><a href="">Find Us</a>
+                    <ul class="sub-menu">
+                        <li><a href="./locations.html">Locations</a></li>
+                        <li><a href="./aboutus.html">About Us</a></li>
+                        <li><a href="./contact-us.html">Contact Us</a></li>
+                        <li><a href="./sitemap.html">Site Map</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- The main part of the page. -->
+    <main class="page-container">
+
+        <div class="contact-us-content">
+            <h1>Contact Us</h1>
+            <p>We are also open for takeaway and delivery!</p>
+            <p>#000-000-0000</p>
+            <h3>Hours</h3>
+            <p>Open everyday from 1pm - 10pm</p>   
+
+        </div>
+        <form action="#" method="POST" name="contactUs">
+            <div class="form">
+                <div class="form-heading">
+                    <h2>Questions or concerns?</h2>
+                    <p>Let us know!</p>
+                    <div id="required-field"></div>
+                
+                </div>
+                <div class="form-element-wrapper">
+                
+                   
+                    <div class="form-elements">
+                        <label for="fname">First Name: <span>Required</span></label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                    </div>
+
+                    <div class="form-elements">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </div>
+                 
+                </div>
+                <div class="form-element-wrapper">
+
+                    <div class="form-elements">
+                        <label for="email">* Email: <span>Required</span></label>
+                        <input type="email" id="email" name="email" placeholder="youremail@email.com">
+                    </div>
+
+                    <div class="form-elements">
+                        <label for="phone">* Phone Number: <span>Required</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="416-123-4567">
+                    </div>
+
+
+          
+                </div>
+                <div class="form-elements">
+                    <label for="date-of-visit">Date of your visit</label>
+                    <input type="date" id="start" name="trip-start"
+                    value="2021-03-20"
+                    min="2018-01-01" max="2022-12-31">
+                </div>
+             
+           
+                <div class="individual-element">
+                    <label for="comments">* Please leave your comments here! <span>Required</span></label>
+                    <textarea name="feedback"></textarea>
+                </div>
+                <div class="individual-element">
+                    <input type="checkbox" id="iAgree" name="iAgree">
+                    <label for="iAgree">I agree to <a href="#"> terms and conditions </a>
+                        of your
+                        comapny.</label>
+                </div>
+                <div class="submit-section">   
+                    <button class="submit-Button" type="submit" id="submit" name="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="contact-us-content">
+            <div id="thanksMsg">
+                <h2>Thank you for your feedback!</h2>
+    
+            </div>
+        </div>
+ 
+     
+    </main>
+
+
+    <!-- The footer of the page. -->
+    <footer id="footer" class="page-container">
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="./images/general-logUsed.png" alt="Logo of Holy Epic steakhouse">
+                <p>
+                    Our steakhouse provides the best steak in town. We serve steaks inspired by chinese cuisine on the menu.
+                </p>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-container">
+                    <img class="icons" src="./images/general-auricular-of-phone.png" alt="Icon of phone">
+                    <div class="contact-details">
+                        <h3>Call us</h3>
+                        <h4>000-000-0000</h4>
+                    </div>
+                </div>
+                <div class="footer-contact-container">
+                    <img class="icons" src="./images/general-placeholder.png" alt="Icon for locations">
+                    <div class="contact-details">
+                        <h3>Address</h3>
+                        <h4>203 Humber College Blvd</h4>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img class="icons" src="./images/general-facebook.png" alt="Facebook Icon"></a>
+                    <a href="#"><img class="icons" src="./images/general-instagram.png" alt="Instagram Icon"></a>
+                    <a href="#"><img class="icons" src="./images/general-twitter.png" alt="Twitter Icon"></a>
+                </div>  
+            </div>
+            <div>
+                <h2>Newsletter</h2>
+                <p>Stay updated with all the special offers.</p>
+                <form id="subscriptionForm"class="subscription-form"  >
+                    <div class="form-elements">
+                        <label class="hidden" for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" />
+                    </div>
+                    <button id="submitBtn"type="submit"><img src="./Images/general-paper-plane.png" alt="Submit Button"></button>
+                </form>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="bottom-footer">
+            <p>&copy; 2021 Divish Ram (Humber College: HTTP 5111)</p>
+
+           <nav>
+                <ul class="bottom-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="sperator">|</li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li class="sperator">|</li>
+                    <li><a href="./events.html">Event/Bookings</a></li>
+                    <li class="sperator">|</li>
+                    <li><a href="./contest.html">Enjoy a game !</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>

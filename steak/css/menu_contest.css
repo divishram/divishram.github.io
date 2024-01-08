@@ -1,0 +1,132 @@
+#mainHeader {
+    background-color: #c7884b;
+    color: #000;
+    display: block;
+    padding: 25px;
+}
+
+#daily {
+    font-size: 2.5em;
+    color: #E6E5E5;
+    text-decoration: underline;
+}
+
+#specials {
+    font-size: 3.5em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    border: 1px solid #c7884b;
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+}
+
+.specialTitle {
+    color: darkolivegreen;
+} 
+
+.specialImg {
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+/* Contest Page */
+#gameTitle {
+    position: absolute;
+    width: 800px; 
+    height: 600px;
+    margin: 0 auto;
+    background-color: #c7884b;
+    opacity: 0.9;
+}
+
+#gameTitleTxt {
+    margin: 80px 25px;
+}
+
+#gameTitleTxt ul {
+    list-style-type: none;
+}
+
+#gameTitleTxt ul li p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#game {
+    width: 800px; 
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url("../images/contest-game_area_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #c7884b;
+}
+
+#startButton {
+    display: block;
+    margin: 15px auto;
+    padding: 5px 10px;
+    background-color: #c7884b;
+    color: #E6E5E5;
+    border: 2px solid #E6E5E5;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#startButton:hover {
+    background-color: #E6E5E5;
+    color: #c7884b;
+    border: 2px solid #c7884b;
+}
+
+#steakDish, #dumplinDish, #ramenDish, #sushiDish, #burgerDish, 
+#friesDish, #cheeseDish, #cocoDish, #icecreamDish {
+    width: 100px;
+    height: auto;
+    display: none;
+    position: absolute;
+}
+
+#specialSteak {
+    width: 100px;
+    height: auto;
+    display: none;
+    position: absolute;
+}
+
+#scoreText {
+    position: absolute;
+    display: none;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #c7884b;
+}
+
+.gameRules {
+    list-style-position: inside;
+}
+
+.foodItems {
+    width: 45px;
+    height: auto;
+}
