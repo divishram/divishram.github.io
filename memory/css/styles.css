@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fontdiner+Swanky&display=swap");
+
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background: radial-gradient(rgb(34, 21, 195), black);
+}
+.page-title {
+  color: white;
+  font-family: "Fontdiner Swanky", cursive;
+  font-size: 50px;
+  text-align: center;
+  transition: 2s ease-in-out;
+  margin: 0;
+}
+.gameinfo-container {
+  grid-column: 1 / -1;
+}
+.gameinfo {
+  font-family: "Crafty Girls", cursive;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  margin: 0;
+}
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    auto
+  ); /*To get the container in a 4 column layout*/
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px; /*To do the 3d animation on the flip*/
+}
+.cards {
+  background: #000;
+  height: 100px;
+  width: 125px;
+  position: relative;
+  overflow: hidden;
+}
+.cards.visible .card-back {
+  transform: rotateY(-180deg);
+}
+.cards.visible .card-front {
+  transform: rotatey(0deg);
+}
+.card-back {
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  margin: 0;
+  backface-visibility: hidden;
+  transition: transform 500ms ease-in-out;
+  transform: rotateY(0deg);
+}
+.card-front {
+  backface-visibility: hidden;
+  transition: transform 500ms ease-in-out;
+  transform: rotateY(180deg);
+}
+.cards.matched {
+  animation: dance 1s 2;
+}
+#victory {
+  background-color: black;
+}
+.overlay-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100; /*to give the stack order of the element  The positive value will give it more importance*/
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Crafty Girls", cursive;
+  transition: background-color 1s, font-size 1ms;
+}
+.overlay-text > img.fireworks-left {
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  animation: fireworks 1s forwards;
+}
+.overlay-text > img.fireworks-right {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  animation: fireworks 2s forwards;
+}
+.overlay-text > img.fireworks-top {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  animation: fireworks 1s forwards;
+}
+.overlay-text > img.fireworks-bottom {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 200px;
+  height: 200px;
+  animation: fireworks 2s forwards;
+}
+.restart {
+  font-size: 0.3em;
+}
+.overlay-text.visible {
+  display: flex;
+  animation: overlay-grow 1s forwards;
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotateX(180deg);
+  }
+  75% {
+    transform: rotateX(-180deg);
+  }
+}
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 10em;
+  }
+}
+@keyframes fireworks {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.25);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

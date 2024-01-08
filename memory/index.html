@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Memory Game</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <script src="./js/scripts.js"></script>
+    </head>
+
+    <body>
+
+        <h1 class="page-title">Check your memory!</h1>
+        <div class="overlay-text">
+            <p id="startgame">Click to Start</p>
+        </div>
+        <div id="gameover" class="overlay-text visible">
+            <p>Begin</p>
+            <span id="restartgame" class="restart">Click to Start</span>
+        </div>
+        <div id="victory" class="overlay-text">
+            <p>VICTORY</p>
+            <span id="startgameagain" class="restart">Click to Start</span>
+            <img class="fireworks-left" src="images/Spark1_I.jpg" alt="fireworks img">
+            <img class="fireworks-right" src="images/Spark2_I.jpg" alt="fireworks img">
+            <img class="fireworks-top" src="images/Spark3_I.jpg" alt="fireworks img">
+            <img class="fireworks-bottom" src="images/Spark4_I.jpg" alt="fireworks img">
+        </div>
+        <div class="game-container">
+            <div class="gameinfo-container">
+                <div class="gameinfo">
+                    <p>Time: <span id="time-remaining">0</span></p>
+                    <p>Flips: <span id="flips">0</span></p>
+                </div>
+            </div>
+            <div class="cards" style="order: 2;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                    
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/tiger.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 1;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/monkey.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 0;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/lizard.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+
+            </div>
+            <div class="cards" style="order: 3;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/panda.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 3;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/panda2.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 3;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/rabbit.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 4;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/mouse.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+
+            </div>
+            <div class="cards" style="order: 7;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/penguins.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 5;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/tiger.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 3;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/panda.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 9;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/monkey.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 1;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/panda2.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 7;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/penguins.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 8;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/rabbit.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 13;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/lizard.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+            <div class="cards" style="order: 11;">
+                <div class="card-back">
+                    <img src="images/darkwood.jpg" alt="an image of the bird flying" width="125" height="100">
+                </div>
+                <div class="card-front">
+                    <img class="card-value" src="images/mouse.jpg" alt="an image of a tiger" width="125" height="100">
+                </div>
+            </div>
+        </div>
+    
+
+</body></html>
