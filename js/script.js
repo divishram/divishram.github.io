@@ -1,5 +1,4 @@
 "use strict";
-
 let Menubtn = document.getElementById("Menubtn");
 
 if (Menubtn) {
