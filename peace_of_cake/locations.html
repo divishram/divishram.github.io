@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/3e9a9b334f.js" crossorigin="anonymous"></script>
+	<script async defer src="JS/locationScript.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="images/x-icon" href="images/favicon.ico">
+	<title>Peace Of Cake</title>
+</head>
+
+<body>
+	<div class="container">
+		<header id="header">
+			<nav class="flex-container">
+				<div id="header-logo">
+					<a href="index.html"><span><img src="images/logo.png" alt="Logo of the peace of cake website"
+								width="120" height="93"></span></a>
+				</div>
+				<h3 class="hidden">Main navigation</h3>
+				<button id="menu-toggle"><span class="fas fa-bars"></span></button>
+				<div id="main-menu">
+					<ul class="flex-container">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="locations.html">Locations</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contest.html">Contest</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="main">
+			<h1 id="location-header">Find Us Here</h1>
+			<div id="location-container">
+				<div id="map">
+					<iframe id="map-canvas"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.2457351824673!2d-79.60855718533298!3d43.72622175572519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b1557d8ca69%3A0x66a5d205e6eadc1!2sHumber%20College%20North!5e0!3m2!1sen!2sca!4v1638296830895!5m2!1sen!2sca"
+						style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div id="address">
+					<div id="location1" class="address-flex-items">
+						<button id="store1">Peace Of Cake - Etobicoke</button>
+						<p><span class="fas fa-map-marker-alt add-icon"></span>&nbsp 203 Humber College Blvd, Etobicoke,
+							ON M9W 6V3</p>
+						<p><span class="fas fa-phone-alt add-icon"></span>&nbsp 416-123-9999</p>
+					</div>
+					<div id="location2" class="address-flex-items">
+						<button id="store2">Peace Of Cake - Lakeshore</button>
+						<p><span class="fas fa-map-marker-alt add-icon"></span>&nbsp Humber lakeshore West, 3199 Lake
+							Shore Blvd W, Etobicoke, ON M8V 1K8</p>
+						<p><span class="fas fa-phone-alt add-icon"></span>&nbsp 416-123-8888</p>
+					</div>
+					<div id="location3" class="address-flex-items">
+						<button id="store3">Peace Of Cake - Hayden</button>
+						<p><span class="fas fa-map-marker-alt add-icon"></span>&nbsp 59 Hayden St Unit 400, Toronto, ON
+							M4Y 2P2</p>
+						<p><span class="fas fa-phone-alt add-icon"></span>&nbsp 416-123-7777</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer id="footer" class="flex-container">
+			<nav id="footer-main-nav">
+				<ul class="footer-menu container">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="locations.html">Locations</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="contest.html">Contest</a></li>
+				</ul>
+			</nav>
+			<div id="mobile-logo"><a href="index.html"><img src="images/logo-mobile.png"
+						alt="Logo of the peace of cake website" width="150" height="116"></a></div>
+			<nav id="required-nav">
+				<!--footer logo-->
+				<div id="desktop-logo"><a href="index.html"><span class="logo"><img src="images/logo.png"
+								alt="Logo of the peace of cake website" width="200" height="154"></span></a></div>
+				<p>&copy Divish, Tanner, Mahshad, Mahima. All Rights Reserved.</p>
+				<ul class="menu">
+					<li><a href="">Disclaimer</a></li> <span>|</span>
+					<li><a href="">Privacy Policy</a></li> <span>|</span>
+					<li><a href="">Terms & Conditions</a></li> <span>|</span>
+					<li><a href="">Accessibility</a></li>
+				</ul>
+			</nav>
+			<nav id="social-media-nav">
+				<div id="social-media">
+					<p>Follow Us</p>
+					<div>
+						<a href="https://www.instagram.com"><span class="fab fa-instagram icon"></span></a>
+						<a href="https://www.facebook.com"><span class="fab fa-facebook-f icon"></span></a>
+						<a href="https://www.tiktok.com"><span class="fab fa-tiktok icon"></span></a>
+						<a href="https://www.yelp.com"><span class="fab fa-yelp icon"></span></a>
+					</div>
+				</div>
+			</nav>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3e9a9b334f.js" crossorigin="anonymous"></script>
+  <script async defer src="JS/script.js"></script>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+  <title>Peace Of Cake</title>
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <nav class="flex-container">
+        <div id="header-logo">
+          <a href="index.html"><span><img src="images/logo.png" alt="Logo of the peace of cake website" width="120"
+                height="93"></span></a>
+        </div>
+        <h3 class="hidden">Main navigation</h3>
+        <button id="menu-toggle"><span class="fas fa-bars"></span></button>
+        <div id="main-menu">
+          <ul class="flex-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contest.html">Contest</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="contentInfo">
+      <h2 class="col-12 text-center tm-section-title">MENU</h2>
+
+      <div class="tm-paging-links">
+        <nav>
+          <ul>
+            <li class="tm-paging-item"><a href="#" class="tm-paging-link active">Global</a></li>
+            <li class="tm-paging-item"><a href="#" class="tm-paging-link">Cakes</a></li>
+            <li class="tm-paging-item"><a href="#" class="tm-paging-link">Cookies</a></li>
+            <li class="tm-paging-item"><a href="#" class="tm-paging-link">Puddings</a></li>
+            <li class="tm-paging-item"><a href="#" class="tm-paging-link">Beverages</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Gallery -->
+      <div class="row tm-gallery">
+        <!-- gallery page global -->
+        <div id="tm-gallery-page-global" class="tm-gallery-page">
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/global/Tiramisu.jpg" alt="Image of Tiramisu" class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Tiramisu</h4>
+                <p class="tm-gallery-description">Italy</p>
+                <p class="tm-gallery-price">$11.99</p>
+                <p class="tm-gallery-info">This Venetian delight made with mascarpone, coffee and rum is definitely
+                  going to "cheer you up!".</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/global/kurikinton.jpg" alt="Image of Chestnut Kinton"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Chestnut Kinton</h4>
+                <p class="tm-gallery-description">Japan</p>
+                <p class="tm-gallery-price">$12.99</p>
+                <p class="tm-gallery-info">Kuri Kintons are the norm when it comes to New Year's in Japan. The chestnut
+                  gold mash with candied chestnuts and sweet potatoes is deemed to bring prosperity for the future. </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/global/cream brulee.jpg" alt="Image of Crème Brûlée"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Crème Brûlée</h4>
+                <p class="tm-gallery-description">France</p>
+                <p class="tm-gallery-price">$14.50</p>
+                <p class="tm-gallery-info">Our Trinity Cream is a delicacy only the French could own, and we deliver it
+                  with utmost authenticity in taste by retaining the exquisite texture of caramelized sugar & custard
+                  vanilla. </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/global/Gulab-Jamun.jpeg" alt="Image of Gulaab Jamun"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Gulaab Jamun</h4>
+                <p class="tm-gallery-description">India</p>
+                <p class="tm-gallery-price">$12.99</p>
+                <p class="tm-gallery-info">Ever heard of something like a ball of happiness? Whoever said that must be
+                  thinking of Gulaab Jamuns! </p>
+              </figcaption>
+            </figure>
+          </article>
+        </div> <!-- gallery page global -->
+        <!-- gallery page 1 -->
+        <div id="tm-gallery-page-cakes" class="tm-gallery-page hidden">
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cakes/Sachertorte.jpeg" alt="Image of Sachertorte"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Sachertorte</h4>
+                <p class="tm-gallery-description">Austria</p>
+                <p class="tm-gallery-price">$35.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cakes/Lady-Baltimore-Cake.jpeg" alt="Image of Lady Baltimore Cake"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Lady Baltimore Cake</h4>
+                <p class="tm-gallery-description">United States</p>
+                <p class="tm-gallery-price">$37.79</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cakes/Black-Forest-Chocolate.jpeg" alt="Image of lack Forest Chocolate Torte"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Black Forest Torte</h4>
+                <p class="tm-gallery-description">Germany</p>
+                <p class="tm-gallery-price">$40.50</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cakes/Italian-Cream-Cheese-Cake.jpeg" alt="Image of Cream Cheese Cake"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Cream Cheese Cake</h4>
+                <p class="tm-gallery-description">Italy</p>
+                <p class="tm-gallery-price">$42.89</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cakes/Dulce de Leche Cheesecake.jpeg" alt="Image of Dulce de Leche Cheesecake"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Dulce de Leche Cheesecake</h4>
+                <p class="tm-gallery-description">Paraguay</p>
+                <p class="tm-gallery-price">$48.25</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div> <!-- gallery page 1 -->
+
+        <!-- gallery page 2 -->
+        <div id="tm-gallery-page-cookies" class="tm-gallery-page hidden">
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cookies/Almond-Ginger-Cookies.jpeg" alt="Image of Almond Ginger Cookies"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Almond Ginger Cookies</h4>
+                <p class="tm-gallery-description">China</p>
+                <p class="tm-gallery-price">$8.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cookies/Chocolate Lace Cookies.jpeg" alt="Image of Chocolate Lace Cookies"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Chocolate Lace Cookies</h4>
+                <p class="tm-gallery-description">Sweden</p>
+                <p class="tm-gallery-price">$8.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cookies/matcha-green-tea-mochi-cookies.jpeg" alt="Image of Matcha Mochi Cookies"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Matcha Mochi Cookies</h4>
+                <p class="tm-gallery-description">Japan</p>
+                <p class="tm-gallery-price">$8.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cookies/Italian Orange-Fig Cookies .jpeg" alt="Image of Orange-Fig Cookies"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Orange-Fig Cookies</h4>
+                <p class="tm-gallery-description">Italy</p>
+                <p class="tm-gallery-price">$8.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/cookies/Scottish-Shortbread.jpeg" alt="Image of Scottish Shortbread"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Scottish Shortbread</h4>
+                <p class="tm-gallery-description">Scotland</p>
+                <p class="tm-gallery-price">$8.99</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div> <!-- gallery page 2 -->
+
+        <!-- gallery page 3 -->
+        <div id="tm-gallery-page-puddings" class="tm-gallery-page hidden">
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/puddings/pudding-di-riso.jpg" alt="Image of Budino di riso"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Budino di riso</h4>
+                <p class="tm-gallery-description">Italy</p>
+                <p class="tm-gallery-price">$12.50</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/puddings/serradura.jpg" alt="Image of Serradura" class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Serradura</h4>
+                <p class="tm-gallery-description">China</p>
+                <p class="tm-gallery-price">$12.50</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/puddings/curau.jpg" alt="Image of Curau" class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Curau</h4>
+                <p class="tm-gallery-description">Brazil</p>
+                <p class="tm-gallery-price">$11.50</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/puddings/Pudim-de-Laranja.jpg" alt=" Image of Pudim de laranja"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Pudim de laranja</h4>
+                <p class="tm-gallery-description">Portugal</p>
+                <p class="tm-gallery-price">$11.50</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/puddings/zerde.jpg" alt=" Image of Zerde" class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Zerde</h4>
+                <p class="tm-gallery-description">Turkey</p>
+                <p class="tm-gallery-price">$11.50</p>
+              </figcaption>
+            </figure>
+          </article>
+
+        </div> <!-- gallery page 3 -->
+
+        <!-- gallery page 4 -->
+        <div id="tm-gallery-page-beverages" class="tm-gallery-page hidden">
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/beverage/mojito.jpeg" alt="Image of Mojito" class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Mojito</h4>
+                <p class="tm-gallery-description">Cuba</p>
+                <p class="tm-gallery-price">$17.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/beverage/Pina colada.jpg" alt="Image of Pina colada"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Pina colada</h4>
+                <p class="tm-gallery-description">Puerto Rico</p>
+                <p class="tm-gallery-price">$17.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/beverage/Mango-Lassi.jpg" alt="Image of Mango lassi"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Mango lassi</h4>
+                <p class="tm-gallery-description">India</p>
+                <p class="tm-gallery-price">$17.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/beverage/thai tea.jpeg" alt=" Image of Thai Iced Tea"
+                class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Thai Iced Tea</h4>
+                <p class="tm-gallery-description">Thailand</p>
+                <p class="tm-gallery-price">$15.99</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+            <figure>
+              <img src="images/menu/beverage/Sangria.jpeg" alt=" Image of Sangria" class="img-fluid tm-gallery-img">
+              <figcaption>
+                <h4 class="tm-gallery-title">Sangria</h4>
+                <p class="tm-gallery-description">Spain</p>
+                <p class="tm-gallery-price">$16.50</p>
+              </figcaption>
+            </figure>
+          </article>
+
+        </div> <!-- gallery page 4 -->
+      </div>
+    </main>
+
+    <footer id="footer" class="flex-container">
+      <nav id="footer-main-nav">
+        <ul class="footer-menu container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contest.html">Contest</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-logo"><a href="index.html"><img src="images/logo-mobile.png"
+            alt="Logo of the peace of cake website" width="150px" height="116px"></a></div>
+      <nav id="required-nav">
+        <!--footer logo-->
+        <div id="desktop-logo"><a href="index.html"><span class="logo"><img src="images/logo.png"
+                alt="Logo of the peace of cake website" width="200px" height="154px"></span></a></div>
+				<p>&copy Divish, Tanner, Mahshad, Mahima. All Rights Reserved.</p>
+        <ul class="menu">
+          <li><a href="">Disclaimer</a></li> <span>|</span>
+          <li><a href="">Privacy Policy</a></li> <span>|</span>
+          <li><a href="">Terms & Conditions</a></li> <span>|</span>
+          <li><a href="">Accessibility</a></li>
+        </ul>
+      </nav>
+      <nav id="social-media-nav">
+        <div id="social-media">
+          <p>Follow Us</p>
+          <div>
+            <a href="https://www.instagram.com"><span class="fab fa-instagram icon"></span></a>
+            <a href="https://www.facebook.com"><span class="fab fa-facebook-f icon"></span></a>
+            <a href="https://www.tiktok.com"><span class="fab fa-tiktok icon"></span></a>
+            <a href="https://www.yelp.com"><span class="fab fa-yelp icon"></span></a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="JS/jquery.min.js"></script>
+  <script src="JS/parallax.min.js"></script>
+  <script>
+    $(document).ready(function () {
+     // Handle click on paging links
+      $('.tm-paging-link').click(function (e) {
+        e.preventDefault();
+
+        var page = $(this).text().toLowerCase();
+        $('.tm-gallery-page').addClass('hidden');
+        $('#tm-gallery-page-' + page).removeClass('hidden');
+        $('.tm-paging-link').removeClass('active');
+        $(this).addClass("active");
+      });
+    });
+  </script>
+</body>
+
+</html>

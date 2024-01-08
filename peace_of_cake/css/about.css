@@ -1,0 +1,32 @@
+/*Fonts----------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+
+#main {
+  padding: 2em;
+}
+#main h1{
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #D17878;
+  margin-bottom: 30px;
+  font-size: 170%;
+}
+
+#main p {
+  font-family: roboto;
+  font-size: 110%;
+  line-height: 200%;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-top: 2em;
+}
+
+#summary {
+  font-style: italic;
+}
+.restaurant {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
