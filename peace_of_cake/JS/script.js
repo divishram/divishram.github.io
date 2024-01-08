@@ -1,3 +1,4 @@
+"use strict";
 let toggle = document.getElementById("menu-toggle");
 
 toggle.onclick = toggleMenu;
