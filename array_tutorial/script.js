@@ -1,6 +1,5 @@
 "use strict";
 window.onload = createGlobalArray();
-
 // variables
 // array that will  be used for poppping and pushing, to hold
 // the last operation's values
